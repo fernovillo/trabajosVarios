@@ -1,3 +1,6 @@
+const d = document;
+const w = window;
+
 function sumar() {
   const operand1 = parseFloat(document.getElementById("operand1").value);
   const operand2 = parseFloat(document.getElementById("operand2").value);
@@ -23,7 +26,8 @@ function dividir() {
   const operand1 = parseFloat(document.getElementById("operand1").value);
   const operand2 = parseFloat(document.getElementById("operand2").value);
   if (operand2 === 0) {
-    document.getElementById("resultado").textContent = "No se puede dividir por 0";
+    document.getElementById("resultado").textContent =
+      "No se puede dividir por 0";
   } else {
     const result = operand1 / operand2;
     document.getElementById("resultado").textContent = result;
